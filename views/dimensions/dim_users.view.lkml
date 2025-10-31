@@ -1,5 +1,5 @@
 view: dim_users {
-  sql_table_name: bigquery-public-data.thelook_ecommerce.users ;;
+  sql_table_name: thelook.thelook_ecommerce.users ;;
   view_label: "Users"
   label: "Users"
 
