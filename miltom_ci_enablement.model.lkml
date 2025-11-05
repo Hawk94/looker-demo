@@ -42,7 +42,7 @@ test: orders_items_2021 {
     expression: ${order_items.count_order_items} > 10000000  ;;
   }
   assert: matches_historic_upper_bound {
-    expression: ${order_items.count_order_items} < 14000  ;;
+    expression: ${order_items.count_order_items} < -1  ;;
   }
 }
 
