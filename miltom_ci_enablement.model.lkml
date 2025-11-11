@@ -39,10 +39,10 @@ test: orders_items_2021 {
     filters: [order_items.created_year: "2021"]
   }
   assert: matches_historic_lower_bound {
-    expression: ${order_items.count_order_items} > 10000000  ;;
+    expression: ${order_items.count_order_items} > 11000  ;;
   }
   assert: matches_historic_upper_bound {
-    expression: ${order_items.count_order_items} < -1  ;;
+    expression: ${order_items.count_order_items} < 20000  ;;
   }
 }
 
