@@ -20,7 +20,7 @@ view: dim_users {
     type: string
     description: "The country the user lives in."
     map_layer_name: countries
-    sql: ${TABLE}.countrie ;;
+    sql: ${TABLE}.country ;;
   }
 
   dimension_group: created {
