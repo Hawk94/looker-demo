@@ -12,7 +12,7 @@ explore: order_items {
   fields: [ALL_FIELDS*]
   from: fct_order_items
   join: fct_orders {
-    relationship: many_to_one
+    relationship: many_to_on
     sql_on: ${fct_orders.order_id} = ${order_items.order_id} ;;
   }
   join: dim_products {
@@ -39,10 +39,10 @@ test: orders_items_2021 {
     filters: [order_items.created_year: "2021"]
   }
   assert: matches_historic_lower_bound {
-    expression: ${order_items.count_order_items} > 10000  ;;
+    expression: ${order_items.count_order_items} > 1000000  ;;
   }
   assert: matches_historic_upper_bound {
-    expression: ${order_items.count_order_items} < 14000  ;;
+    expression: ${order_items.count_order_items} < 0  ;;
   }
 }
 
@@ -54,9 +54,9 @@ test: orders_items_2020 {
     filters: [order_items.created_year: "2020"]
   }
   assert: matches_historic_lower_bound {
-    expression: ${order_items.count_order_items} > 5000  ;;
+    expression: ${order_items.count_order_items} > 1000000  ;;
   }
   assert: matches_historic_upper_bound {
-    expression: ${order_items.count_order_items} < 8000  ;;
+    expression: ${order_items.count_order_items} < 0  ;;
   }
 }
