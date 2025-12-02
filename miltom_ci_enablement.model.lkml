@@ -12,7 +12,7 @@ explore: order_items {
   fields: [ALL_FIELDS*]
   from: fct_order_items
   join: fct_orders {
-    relationship: many_to_on
+    relationship: many_to_one
     sql_on: ${fct_orders.order_id} = ${order_items.order_id} ;;
   }
   join: dim_products {

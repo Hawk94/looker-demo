@@ -3,12 +3,12 @@ view: dim_users {
   view_label: "Users"
   label: "Users"
 
-  # dimension: user_id {
-  #   type: number
-  #   primary_key: yes
-  #   hidden: yes
-  #   sql: ${TABLE}.id ;;
-  # }
+  dimension: user_id {
+    type: number
+    primary_key: yes
+    hidden: yes
+    sql: ${TABLE}.id ;;
+  }
 
   dimension: city {
     type: string
