@@ -10,7 +10,7 @@ view: fct_orders {
     sql: ${TABLE}.order_id ;;
   }
 
-  dimension_group: created {
+  dimension_group: created_at {
     type: time
     description: "The date/timestamp the order was created."
     timeframes: [
