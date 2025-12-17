@@ -59,7 +59,7 @@ view: fct_order_items {
     type: number
     value_format_name: usd_0
     description: "The sale price of the line item (USD)."
-    sql: ${TABLE}.sale_price ;;
+    sql: ${TABLE}.sale_pricez ;;
   }
 
   dimension_group: shipped {
