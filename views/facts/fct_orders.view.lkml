@@ -31,7 +31,7 @@ view: fct_orders {
     sql: ${TABLE}.status ;;
   }
 
-  dimension: user_id {
+  dimension: user_id_error {
     type: number
     description: "The ID of the associated user."
     sql: ${TABLE}.user_id ;;
