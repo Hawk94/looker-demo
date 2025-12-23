@@ -37,7 +37,7 @@ view: fct_orders {
     sql: ${TABLE}.user_id ;;
   }
 
-  measure: count_orders {
+  measure: count_orders_error {
     type: count
     description: "A count of the number of orders present."
     drill_fields: []
