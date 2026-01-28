@@ -3,7 +3,7 @@ view: dim_products {
   view_label: "Products"
   label: "Products"
 
-  dimension: product_id {
+  dimension: individual_product_id {
     type: number
     primary_key: yes
     hidden: yes
