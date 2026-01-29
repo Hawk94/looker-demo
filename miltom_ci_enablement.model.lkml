@@ -17,7 +17,7 @@ explore: order_items {
   }
   join: dim_products {
     relationship: many_to_one
-    sql_on: ${dim_products.product_id} = ${order_items.product_id} ;;
+    sql_on: ${dim_products.individual_product_id} = ${order_items.product_id} ;;
   }
   join: dim_users {
     relationship: many_to_one
