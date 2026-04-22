@@ -5,7 +5,7 @@ include: "/views/dimensions/dim_users.view.lkml"
 include: "/views/facts/fct_order_items.view.lkml"
 include: "/views/facts/fct_orders.view.lkml"
 
-label: "Demo - Ecommerce"
+label: "Demo - Ecommerce - with change"
 
 explore: order_items {
   label: "Demo - Orders"
@@ -39,7 +39,7 @@ test: orders_items_2021 {
     filters: [order_items.created_year: "2021"]
   }
   assert: matches_historic_lower_bound {
-    expression: ${order_items.count_order_items} > 10000  ;;
+    expression: ${order_items.count_order_items} > 10000000  ;;
   }
   assert: matches_historic_upper_bound {
     expression: ${order_items.count_order_items} < 14000  ;;

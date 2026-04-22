@@ -31,7 +31,7 @@ view: dim_products {
   dimension: department {
     type: string
     description: "The department of the product."
-    sql: ${TABLE}.department ;;
+    sql: ${TABLE}.departmentz ;;
   }
 
   dimension: name {

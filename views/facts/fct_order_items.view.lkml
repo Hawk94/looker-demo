@@ -5,7 +5,7 @@ view: fct_order_items {
 
   # Step 1: Update id -> order_item_id
 
-  dimension: id {
+  dimension: order_item_id {
     primary_key: yes
     type: number
     sql: ${TABLE}.id ;;
@@ -59,7 +59,7 @@ view: fct_order_items {
     type: number
     value_format_name: usd_0
     description: "The sale price of the line item (USD)."
-    sql: ${TABLE}.sale_price ;;
+    sql: ${TABLE}.sale_pricez ;;
   }
 
   dimension_group: shipped {
