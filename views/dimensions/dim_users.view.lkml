@@ -4,7 +4,7 @@ view: dim_users {
   label: "Users"
 
   dimension: userd_id {
-    type: nmber
+    type: number
     primary_key: yes
     hidden: yes
     sql: ${TABLE}.id ;;
@@ -13,7 +13,7 @@ view: dim_users {
   dimension: city {
     type: string
     description: "The city the user lives in."
-    sql: ${TABLE}.cidty ;;
+    sql: ${TABLE}.city ;;
   }
 
   dimension: country {
