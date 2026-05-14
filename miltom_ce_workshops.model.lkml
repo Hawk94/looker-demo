@@ -1,4 +1,4 @@
-connection: "thelook"
+connection: "lohk-bq"
 
 include: "/views/dimensions/dim_products.view.lkml"
 include: "/views/dimensions/dim_users.view.lkml"
