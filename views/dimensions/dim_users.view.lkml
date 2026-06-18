@@ -1,9 +1,9 @@
 view: dim_users {
-  sql_table_name: bigquery-public-data.thelook_ecommerce.users ;;
+  sql_table_name: thelook.thelook_ecommerce.users ;;
   view_label: "Users"
   label: "Users"
 
-  dimension: userd_id {
+  dimension: user_id {
     type: number
     primary_key: yes
     hidden: yes

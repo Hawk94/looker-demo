@@ -1,4 +1,4 @@
-connection: "default_bigquery_connection"
+connection: "thelook"
 
 include: "/views/dimensions/dim_products.view.lkml"
 include: "/views/dimensions/dim_users.view.lkml"
@@ -6,6 +6,8 @@ include: "/views/facts/fct_order_items.view.lkml"
 include: "/views/facts/fct_orders.view.lkml"
 
 label: "Demo - Ecommerce - with change"
+
+# New Comment
 
 explore: order_items {
   label: "Demo - Orders"
