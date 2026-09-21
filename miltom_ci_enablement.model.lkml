@@ -31,12 +31,6 @@ explore: dim_products {
   fields: [ALL_FIELDS*]
 }
 
-always_filter: {
-  filters: [
-    orders.test: "'AsIs'"
-  ]
-}
-
 test: orders_items_2021 {
   explore_source: order_items {
     column: count {
