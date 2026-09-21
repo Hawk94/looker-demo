@@ -1,5 +1,5 @@
 view: fct_orders {
-  sql_table_name: bigquery-public-data.thelook_ecommerce.orders ;;
+  sql_table_name: thelook.thelook_ecommerce.orders ;;
   view_label: "Orders"
   label: "Orders"
 
@@ -39,7 +39,7 @@ view: fct_orders {
 
   measure: count_orders_error {
     type: count
-    description: "A count of the number of orders."
+    description: "A count of the number of orders present."
     drill_fields: []
   }
 }

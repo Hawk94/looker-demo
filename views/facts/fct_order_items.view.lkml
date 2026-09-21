@@ -1,15 +1,15 @@
 view: fct_order_items {
-  sql_table_name: bigquery-public-data.thelook_ecommerce.order_items ;;
+  sql_table_name: thelook.thelook_ecommerce.order_items ;;
   view_label: "Order Items"
   label: "Order Items"
 
   # Step 1: Update id -> order_item_id
 
-  # dimension: id {
-  #   primary_key: yes
-  #   type: number
-  #   sql: ${TABLE}.id ;;
-  # }
+  dimension: order_item_id {
+    primary_key: yes
+    type: number
+    sql: ${TABLE}.id ;;
+  }
 
   dimension_group: created {
     type: time
